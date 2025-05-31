@@ -1,5 +1,5 @@
 /**
- * @file safe_strings.h
+ * @file sstring.h
  * @brief Safe and dynamic string library for C
  * @author Antonio Bernardini
  * @date 2025

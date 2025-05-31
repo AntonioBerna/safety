@@ -25,7 +25,7 @@ Each module implements proven safety strategies with rigorous bounds checking, a
 
 ### Currently Implemented
 
-#### 🧵 Safe Strings (`safe_strings/`)
+#### 🧵 Safe Strings (`sstring/`)
 **Complete implementation** of memory-safe string operations with:
 - **Automatic memory management** - No manual allocation/deallocation required
 - **Dynamic resizing** - Strings grow automatically as needed with efficient growth strategies
@@ -89,15 +89,15 @@ cd safety/
 You can build and run the example program that demonstrates the usage of safe strings:
 
 ```bash
-cd safe_strings/examples/
+cd sstring/examples/
 cmake -B build -S .
 cmake --build build
 
 # Run the example
-./build/full_example
+./build/full-example
 
 # Valgrind check
-valgrind --leak-check=full --track-origins=yes ./build/full_example
+valgrind --leak-check=full --track-origins=yes ./build/full-example
 ```
 
 #### :test_tube: Testing
@@ -105,13 +105,13 @@ valgrind --leak-check=full --track-origins=yes ./build/full_example
 You can test the safe strings implementation by running the following commands:
 
 ```bash
-cd safe_strings/tests/
+cd sstring/tests/
 cmake -B build -S .
 cmake --build build
 
 # Run tests
-./build/safe_strings_test
+./build/sstring-test
 
 # Valgrind check
-valgrind --leak-check=full --track-origins=yes ./build/safe_strings_test
+valgrind --leak-check=full --track-origins=yes ./build/sstring-test
 ```

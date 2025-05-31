@@ -1,5 +1,5 @@
 /**
- * @file safe_strings_test.c
+ * @file sstring-test.c
  * @brief Test suite for the safe strings library
  * @author Antonio Bernardini
  * @date 2025
@@ -11,7 +11,7 @@
 
 #include <assert.h>
 
-#include "safe_strings.h"
+#include "sstring.h"
 
 /**
  * @brief Test function for string creation operations

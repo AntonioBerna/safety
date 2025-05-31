@@ -1,5 +1,5 @@
 /**
- * @file full_example.c
+ * @file full-example.c
  * @brief Comprehensive example demonstrating safe_strings library capabilities
  * @author Antonio Bernardini
  * @date 2025
@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "safe_strings.h"
+#include "sstring.h"
 
 /**
  * @brief Demonstrate basic string operations

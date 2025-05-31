@@ -1,5 +1,5 @@
 /**
- * @file safe_strings.c
+ * @file sstring.c
  * @brief Implementation of the safe strings library
  * @author Antonio Bernardini
  * @date 2025
@@ -9,7 +9,7 @@
  * bounds checking, and comprehensive error handling.
  */
 
-#include "safe_strings.h"
+#include "sstring.h"
 
 /*
  * ==========================

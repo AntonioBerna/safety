@@ -802,7 +802,7 @@ size_t string_find_char(const string_t *str, char c, size_t start_pos) {
         return STRING_NPOS;
     }
 
-    for (size_t i = start_pos; i < str->length; i++) {
+    for (size_t i = start_pos; i < str->length; ++i) {
         if (str->data[i] == c) {
             return i;
         }
@@ -833,7 +833,7 @@ size_t string_find_cstr(const string_t *str, const char *substr, size_t start_po
         return STRING_NPOS;
     }
 
-    for (size_t i = start_pos; i <= str->length - substr_len; i++) {
+    for (size_t i = start_pos; i <= str->length - substr_len; ++i) {
         if (memcmp(str->data + i, substr, substr_len) == 0) {
             return i;
         }
@@ -875,7 +875,7 @@ size_t string_rfind_char(const string_t *str, char c, size_t start_pos) {
         start_pos = str->length - 1;
     }
 
-    for (size_t i = start_pos + 1; i > 0; i--) {
+    for (size_t i = start_pos + 1; i > 0; --i) {
         if (str->data[i - 1] == c) {
             return i - 1;
         }
@@ -901,7 +901,7 @@ string_result_t string_to_upper(string_t *str) {
         return STRING_ERROR_NULL_POINTER;
     }
 
-    for (size_t i = 0; i < str->length; i++) {
+    for (size_t i = 0; i < str->length; ++i) {
         str->data[i] = toupper(str->data[i]);
     }
 
@@ -919,7 +919,7 @@ string_result_t string_to_lower(string_t *str) {
         return STRING_ERROR_NULL_POINTER;
     }
 
-    for (size_t i = 0; i < str->length; i++) {
+    for (size_t i = 0; i < str->length; ++i) {
         str->data[i] = tolower(str->data[i]);
     }
 
@@ -973,7 +973,7 @@ string_result_t string_replace_char(string_t *str, char old_char, char new_char)
         return STRING_ERROR_NULL_POINTER;
     }
 
-    for (size_t i = 0; i < str->length; i++) {
+    for (size_t i = 0; i < str->length; ++i) {
         if (str->data[i] == old_char) {
             str->data[i] = new_char;
         }
